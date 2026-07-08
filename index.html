@@ -3,76 +3,296 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abhishek Bagde - Portfolio</title>
+    <title>Abhishek Bagde — Software Engineer & Systems Builder</title>
+    <meta name="description" content="Portfolio of Abhishek Bagde, a Senior Software Engineer specializing in building thoughtful, robust distributed systems, embedded AI, and highly responsive web interfaces.">
+    <!-- Google Fonts: Newsreader (Serif), Plus Jakarta Sans (Sans-Serif), Space Mono (Monospace) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300..800;1,6..72,300..800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav>
+    <!-- Papery subtle grain overlay -->
+    <div class="grain-overlay" aria-hidden="true"></div>
+
+    <header id="site-header">
+        <nav class="nav-container">
             <div class="logo">
-                <a href="#">Abhishek Bagde</a>
+                <a href="#" id="nav-logo-link">A. Bagde</a>
             </div>
             <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about" id="nav-link-about">About</a></li>
+                <li><a href="#experience" id="nav-link-experience">Experience</a></li>
+                <li><a href="#projects" id="nav-link-projects">Projects</a></li>
+                <li><a href="#contact" id="nav-link-contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <section id="hero">
-        <div class="hero-content">
-            <h1>Abhishek Bagde</h1>
-            <p>Aspiring Software Engineer | Problem Solver | Lifelong Learner</p>
-        </div>
-    </section>
+    <main>
+        <!-- Custom Cursor -->
+        <div class="custom-cursor"></div>
+        <div class="custom-cursor-follower"></div>
 
-    <section id="about">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>
-                I am a passionate and driven software engineering student with a strong foundation in computer science principles and a desire to create innovative solutions. I am constantly seeking new challenges and opportunities to grow my skills and knowledge. I am particularly interested in [Your Interests Here, e.g., machine learning, web development, etc.].
-            </p>
-        </div>
-    </section>
+        <!-- Hero Section -->
+        <section id="hero" class="section-hero reveal">
+            <div class="container hero-container">
+                <div class="section-tag" id="hero-tag">[00] INTRO</div>
+                <h1 class="hero-headline">
+                    Abhishek Bagde is an elite <em>System Software Engineer</em> at NVIDIA, pioneering the next generation of artificial intelligence and high-performance computing.
+                </h1>
+                
+                <!-- Metadata Paper Grid -->
+                <div class="metadata-grid">
+                    <div class="metadata-item">
+                        <span class="meta-label">STATUS</span>
+                        <span class="meta-value">System Software Engineer @ NVIDIA</span>
+                    </div>
+                    <div class="metadata-item">
+                        <span class="meta-label">FOCUS</span>
+                        <span class="meta-value">Artificial Intelligence, Embedded Systems & ML</span>
+                    </div>
+                    <div class="metadata-item">
+                        <span class="meta-label">LOCATION</span>
+                        <span class="meta-value">Pune, India</span>
+                    </div>
+                </div>
 
-    <section id="projects">
-        <div class="container">
-            <h2>Projects</h2>
-            <div class="project-grid">
-                <div class="project-card">
-                    <h3>Project 1</h3>
-                    <p>A brief description of your project. What problem does it solve? What technologies did you use?</p>
-                    <a href="#">View on GitHub</a>
-                </div>
-                <div class="project-card">
-                    <h3>Project 2</h3>
-                    <p>A brief description of your project. What problem does it solve? What technologies did you use?</p>
-                    <a href="#">View on GitHub</a>
-                </div>
-                <div class="project-card">
-                    <h3>Project 3</h3>
-                    <p>A brief description of your project. What problem does it solve? What technologies did you use?</p>
-                    <a href="#">View on GitHub</a>
+                <!-- Currently Status Board -->
+                <div class="currently-board reveal">
+                    <span class="meta-label">CURRENTLY FOCUSING ON</span>
+                    <ul class="currently-list">
+                        <li>Architecting advanced deep learning infrastructure at NVIDIA</li>
+                        <li>Optimizing edge-AI pipelines and real-time computer vision</li>
+                        <li>Pushing the limits of high-performance embedded systems</li>
+                    </ul>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="contact">
-        <div class="container">
-            <h2>Contact</h2>
-            <p>Feel free to reach out to me. I'm always open to new opportunities and collaborations.</p>
-            <a href="mailto:your.email@example.com" class="btn">Email Me</a>
-            <div class="social-links">
-                <a href="https://www.linkedin.com/in/bagde-abhishek" target="_blank">LinkedIn</a>
-                <a href="https://github.com/abhishek100100" target="_blank">GitHub</a>
+        <!-- About Section -->
+        <section id="about" class="section-about reveal">
+            <div class="container grid-two-col">
+                <div class="about-left">
+                    <div class="section-tag" id="about-tag">[01] BIOGRAPHY</div>
+                    <h2 class="section-title">Architecting the future of <em>AI & Edge Computing</em>.</h2>
+                    <p class="about-text">
+                        I am a System Software Engineer at <strong>NVIDIA</strong>, driving innovations in artificial intelligence and advanced deep learning infrastructure. As a former Technical Lead at HCLSoftware, I engineered mission-critical, real-time computer vision platforms and autonomous UAV software from the ground up.
+                    </p>
+                    <p class="about-text">
+                        Armed with an M.Tech in Computer Science from IIT Roorkee, I thrive at the bleeding edge of machine learning, embedded systems, and robust software architecture. I specialize in developing hyper-optimized, hardware-accelerated pipelines using technologies like C++, CUDA, GStreamer, and TensorRT on NVIDIA and NXP SoCs. My code doesn't just run; it pushes the absolute boundaries of edge AI performance and autonomous navigation.
+                    </p>
+                </div>
+                <div class="about-right">
+                    <div class="section-tag" id="skills-tag">[02] STACK & TOOLS</div>
+                    <h3 class="subsection-title">Technical Arsenal</h3>
+                    
+                    <div class="skills-category">
+                        <span class="category-name">LANGUAGES / 04</span>
+                        <div class="skills-list">
+                            <span class="skill-tag">C/C++ (Core)</span>
+                            <span class="skill-tag">Python (Core)</span>
+                            <span class="skill-tag">SQL (Strong)</span>
+                            <span class="skill-tag">Bash (Strong)</span>
+                        </div>
+                    </div>
+
+                    <div class="skills-category">
+                        <span class="category-name">AI & MACHINE LEARNING / 06</span>
+                        <div class="skills-list">
+                            <span class="skill-tag">PyTorch (Core)</span>
+                            <span class="skill-tag">TensorRT (Strong)</span>
+                            <span class="skill-tag">CUDA (Strong)</span>
+                            <span class="skill-tag">ONNX</span>
+                            <span class="skill-tag">OpenCV</span>
+                            <span class="skill-tag">Generative AI</span>
+                        </div>
+                    </div>
+
+                    <div class="skills-category">
+                        <span class="category-name">EMBEDDED & SYSTEMS / 06</span>
+                        <div class="skills-list">
+                            <span class="skill-tag">Linux Internals (Core)</span>
+                            <span class="skill-tag">GStreamer (Strong)</span>
+                            <span class="skill-tag">DeepStream</span>
+                            <span class="skill-tag">ROS2</span>
+                            <span class="skill-tag">Yocto</span>
+                            <span class="skill-tag">Gazebo</span>
+                        </div>
+                    </div>
+
+                    <div class="skills-category">
+                        <span class="category-name">DEVOPS & CLOUD / 05</span>
+                        <div class="skills-list">
+                            <span class="skill-tag">Docker (Core)</span>
+                            <span class="skill-tag">Git/CI/CD (Strong)</span>
+                            <span class="skill-tag">Azure Cloud</span>
+                            <span class="skill-tag">FastAPI</span>
+                            <span class="skill-tag">React</span>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <footer>
-        <p>&copy; 2026 Abhishek Bagde</p>
+        <!-- Experience Section -->
+        <section id="experience" class="section-experience reveal">
+            <div class="container">
+                <div class="section-tag" id="experience-tag">[03] EXPERIENCE</div>
+                <h2 class="section-title">Professional <em>Trajectory</em>.</h2>
+
+                <div class="experience-list">
+                    <div class="experience-item">
+                        <div class="exp-header">
+                            <h3 class="exp-title">System Software Engineer</h3>
+                            <span class="exp-date">Jan 2026 - Present</span>
+                        </div>
+                        <div class="exp-company">NVIDIA — Pune, India</div>
+                        <ul class="exp-details">
+                            <li>Developing advanced artificial intelligence software and tools, working with Nemoclaw and deep learning infrastructure.</li>
+                        </ul>
+                    </div>
+
+                    <div class="experience-item">
+                        <div class="exp-header">
+                            <h3 class="exp-title">Technical Lead</h3>
+                            <span class="exp-date">Jul 2023 - Dec 2025</span>
+                        </div>
+                        <div class="exp-company">HCLSoftware — Chennai, India</div>
+                        <ul class="exp-details">
+                            <li>Contributed to end-to-end development of onboard processing software for UAVs, integrating GStreamer and DeepStream multimedia pipelines on NXP i.MX8M+ and NVIDIA Jetson SoCs.</li>
+                            <li>Engineered an autonomous visual precision landing system using hierarchical ArUco markers, Kalman filtering, and sensor fusion, achieving 95% landing accuracy.</li>
+                            <li>Trained a DetectNet v2 model using NVIDIA TAO on Azure Cloud, deployed via TensorRT/ONNX, and optimized tracking with NanoTrack CUDA kernels.</li>
+                            <li>Built and maintained custom embedded Linux OS using Yocto, reducing the OS footprint by 70%.</li>
+                        </ul>
+                    </div>
+
+                    <div class="experience-item">
+                        <div class="exp-header">
+                            <h3 class="exp-title">Teaching Assistant</h3>
+                            <span class="exp-date">Jun 2022 - Jun 2023</span>
+                        </div>
+                        <div class="exp-company">Department of C.S.E., IIT Roorkee — Roorkee, India</div>
+                        <ul class="exp-details">
+                            <li>Served as TA for Principles of Programming Languages and Database Management Systems, supporting 120+ students.</li>
+                            <li>Conducted weekly lab sessions and tutorial sessions for programming concepts and database design.</li>
+                        </ul>
+                    </div>
+
+                    <div class="experience-item">
+                        <div class="exp-header">
+                            <h3 class="exp-title">Machine Learning Intern</h3>
+                            <span class="exp-date">Dec 2019 - Jan 2020</span>
+                        </div>
+                        <div class="exp-company">TheTechIntern — Nagpur, India</div>
+                        <ul class="exp-details">
+                            <li>Worked on various project modules, demonstrating skills in Python, Data Science, and Machine Learning.</li>
+                            <li>Developed customised applications for critical predictions and automated reasoning.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section-projects reveal">
+            <div class="container">
+                <div class="section-tag" id="projects-tag">[04] SELECTED WORK</div>
+                <h2 class="section-title text-center">Engineering <em>masterpieces</em>.</h2>
+                
+                <div class="project-grid">
+                    <!-- Project 1 -->
+                    <article class="project-card">
+                        <div class="project-image-container">
+                            <img src="images/imaginai_studio.jpg" alt="ImaginAI Studio technical illustration" class="project-image">
+                        </div>
+                        <div class="project-meta">
+                            <span class="project-num">01.</span>
+                            <span class="project-category">AI / FULL-STACK</span>
+                        </div>
+                        <h3 class="project-title">ImaginAI Studio</h3>
+                        <p class="project-description">
+                            Architected a generative AI application with a React frontend and FastAPI backend, orchestrating a cloud-based LLM (Gemma) and locally-hosted Stable Diffusion v1.5 for image synthesis.
+                        </p>
+                        <div class="project-links">
+                            <a href="https://github.com/abhishek100100" target="_blank" rel="noopener noreferrer" class="project-link" id="project-1-link">
+                                View details <span class="arrow">→</span>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Project 2 -->
+                    <article class="project-card">
+                        <div class="project-image-container">
+                            <img src="images/medical_segmentation.jpg" alt="Medical Image Segmentation technical illustration" class="project-image">
+                        </div>
+                        <div class="project-meta">
+                            <span class="project-num">02.</span>
+                            <span class="project-category">DEEP LEARNING / CV</span>
+                        </div>
+                        <h3 class="project-title">Medical Image Segmentation</h3>
+                        <p class="project-description">
+                            Investigated and enhanced SSL-ALPNet network components for medical image segmentation, achieving a mean Dice score of 74.05% and demonstrating superior model performance on constrained datasets.
+                        </p>
+                        <div class="project-links">
+                            <a href="https://github.com/abhishek100100" target="_blank" rel="noopener noreferrer" class="project-link" id="project-2-link">
+                                View details <span class="arrow">→</span>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Project 3 -->
+                    <article class="project-card">
+                        <div class="project-image-container">
+                            <img src="images/dns_resolver.jpg" alt="Multi-Stage DNS Resolver technical illustration" class="project-image">
+                        </div>
+                        <div class="project-meta">
+                            <span class="project-num">03.</span>
+                            <span class="project-category">SYSTEMS / C++</span>
+                        </div>
+                        <h3 class="project-title">Multi-Stage DNS Resolver</h3>
+                        <p class="project-description">
+                            Designed a 2-tier DNS resolution architecture with C++ socket programming, featuring a proxy caching mechanism, bidirectional protocol support, and multi-threaded concurrent request handling.
+                        </p>
+                        <div class="project-links">
+                            <a href="https://github.com/abhishek100100" target="_blank" rel="noopener noreferrer" class="project-link" id="project-3-link">
+                                View details <span class="arrow">→</span>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section-contact reveal">
+            <div class="container">
+                <div class="contact-box">
+                    <div class="section-tag" id="contact-tag">[05] CONNECTION</div>
+                    <h2 class="contact-catchphrase">Let's engineer <em>intelligence</em> at the edge.</h2>
+                    <p class="contact-text">
+                        I am currently a System Software Engineer at NVIDIA. If you'd like to collaborate on open-source projects, talk computer vision, or review code, reach out.
+                    </p>
+                    <div class="contact-action">
+                        <a href="mailto:bagdeabhishek.rahul@gmail.com" class="btn btn-retro" id="contact-btn">
+                            Send an Email <span class="arrow">→</span>
+                        </a>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/bagde-abhishek" target="_blank" rel="noopener noreferrer" class="social-link-item" id="linkedin-link">LinkedIn</a>
+                        <span class="dot-separator">•</span>
+                        <a href="https://github.com/abhishek100100" target="_blank" rel="noopener noreferrer" class="social-link-item" id="github-link">GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="site-footer">
+        <div class="container footer-container">
+            <p class="footer-copy">&copy; 2026 Abhishek Bagde. All rights reserved.</p>
+            <p class="footer-colophon">Set in Newsreader & Space Mono. Inspired by high-end editorial print.</p>
+        </div>
     </footer>
 
     <script src="script.js"></script>
