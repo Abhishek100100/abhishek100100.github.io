@@ -16,16 +16,18 @@
     <div class="grain-overlay" aria-hidden="true"></div>
 
     <header id="site-header">
-        <nav class="nav-container">
+        <nav class="nav-container anthropic-nav">
             <div class="logo">
-                <a href="#" id="nav-logo-link">A. Bagde</a>
+                <a href="#" id="nav-logo-link">ABHISHEK\B</a>
             </div>
-            <ul class="nav-links">
-                <li><a href="#about" id="nav-link-about">About</a></li>
-                <li><a href="#experience" id="nav-link-experience">Experience</a></li>
-                <li><a href="#projects" id="nav-link-projects">Projects</a></li>
-                <li><a href="#contact" id="nav-link-contact">Contact</a></li>
-            </ul>
+            <div class="nav-right">
+                <ul class="nav-links">
+                    <li><a href="#about" id="nav-link-about">Biography</a></li>
+                    <li><a href="#experience" id="nav-link-experience">Experience</a></li>
+                    <li><a href="#projects" id="nav-link-projects">Projects</a></li>
+                </ul>
+                <a href="#contact" class="btn-dark-small">Contact</a>
+            </div>
         </nav>
     </header>
 
@@ -36,26 +38,20 @@
 
         <!-- Hero Section -->
         <section id="hero" class="section-hero reveal">
-            <div class="container hero-container">
-                <div class="section-tag" id="hero-tag">[00] INTRO</div>
-                <h1 class="hero-headline">
-                    Abhishek Bagde is an elite <em>System Software Engineer</em> at NVIDIA, pioneering the next generation of artificial intelligence and high-performance computing.
-                </h1>
-                
-                <!-- Metadata Paper Grid -->
-                <div class="metadata-grid">
-                    <div class="metadata-item">
-                        <span class="meta-label">STATUS</span>
-                        <span class="meta-value">System Software Engineer @ NVIDIA</span>
+            <div class="container hero-container-anthropic">
+                <div class="hero-text-col">
+                    <h1 class="hero-headline">
+                        Architecting<br>AI at Scale
+                    </h1>
+                    <p class="hero-subheadline">
+                        System Software Engineer at NVIDIA, pioneering the next generation of distributed artificial intelligence and high-performance computing.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#about" class="btn-dark">Read biography</a>
                     </div>
-                    <div class="metadata-item">
-                        <span class="meta-label">FOCUS</span>
-                        <span class="meta-value">Distributed AI, Deep Learning Infrastructure & HPC</span>
-                    </div>
-                    <div class="metadata-item">
-                        <span class="meta-label">LOCATION</span>
-                        <span class="meta-value">Pune, India</span>
-                    </div>
+                </div>
+                <div class="hero-art-col">
+                    <img src="images/hero-art.jpg" alt="Computer Vision Analytics Abstract Data Stream" class="hero-art-image">
                 </div>
             </div>
         </section>
@@ -68,6 +64,23 @@
                     <div class="profile-wrapper">
                         <img src="images/profile.png" alt="Abhishek Bagde" class="profile-pic">
                     </div>
+                    
+                    <!-- Metadata Paper Grid -->
+                    <div class="metadata-grid metadata-bio">
+                        <div class="metadata-item">
+                            <span class="meta-label">STATUS</span>
+                            <span class="meta-value">System Software Engineer @ NVIDIA</span>
+                        </div>
+                        <div class="metadata-item">
+                            <span class="meta-label">FOCUS</span>
+                            <span class="meta-value">Distributed AI, Deep Learning Infrastructure & HPC</span>
+                        </div>
+                        <div class="metadata-item">
+                            <span class="meta-label">LOCATION</span>
+                            <span class="meta-value">Pune, India</span>
+                        </div>
+                    </div>
+
                     <h2 class="section-title">Architecting the future of <em>Distributed AI & HPC</em>.</h2>
                     <p class="about-text">
                         I am a System Software Engineer on the <strong>NVIDIA DeepStream Team</strong>, managing Metropolis AI workflows and pioneering active learning techniques. As a former Technical Lead at HCLSoftware, I engineered mission-critical, real-time computer vision platforms and autonomous UAV software from the ground up.
