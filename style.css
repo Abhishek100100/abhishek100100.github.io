@@ -156,11 +156,11 @@ a {
 }
 
 .logo a {
-    font-family: var(--font-sans);
-    font-size: 1.4rem;
+    font-family: 'Caveat', cursive;
+    font-size: 2.2rem;
     font-weight: 700;
-    letter-spacing: -0.03em;
-    text-transform: uppercase;
+    letter-spacing: 0;
+    text-transform: none;
 }
 
 .nav-links {
@@ -259,6 +259,27 @@ a {
     display: flex;
     justify-content: flex-end;
     position: relative;
+}
+
+.hero-art-col::after {
+    content: '';
+    position: absolute;
+    top: -10%;
+    left: 10%;
+    width: 80%;
+    height: 2px;
+    background: rgba(225, 112, 85, 0.4);
+    box-shadow: 0 0 15px rgba(225, 112, 85, 0.6);
+    animation: scanline 4s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+    z-index: 10;
+    pointer-events: none;
+}
+
+@keyframes scanline {
+    0% { top: -5%; opacity: 0; }
+    10% { opacity: 1; }
+    90% { opacity: 1; }
+    100% { top: 105%; opacity: 0; }
 }
 
 .hero-art-image {
@@ -683,9 +704,9 @@ body.scrolled #site-header {
         position: fixed;
         top: 0;
         left: 0;
-        width: 8px;
-        height: 8px;
-        border-radius: 50%;
+        width: 4px;
+        height: 4px;
+        border-radius: 0;
         background-color: var(--accent-orange);
         pointer-events: none;
         z-index: 10000;
@@ -697,10 +718,10 @@ body.scrolled #site-header {
         position: fixed;
         top: 0;
         left: 0;
-        width: 36px;
-        height: 36px;
-        border-radius: 50%;
-        border: 1px dashed var(--accent-orange);
+        width: 40px;
+        height: 40px;
+        border-radius: 0;
+        border: 1px solid var(--accent-orange);
         pointer-events: none;
         z-index: 9999;
         transform: translate(-50%, -50%);
@@ -708,8 +729,8 @@ body.scrolled #site-header {
     }
 
     .custom-cursor.hovering {
-        width: 12px;
-        height: 12px;
+        width: 6px;
+        height: 6px;
         background-color: var(--text-primary);
     }
 
@@ -717,8 +738,8 @@ body.scrolled #site-header {
         width: 48px;
         height: 48px;
         border-color: var(--text-primary);
-        border-style: solid;
-        background-color: rgba(25, 25, 25, 0.05);
+        border-style: dashed;
+        background-color: rgba(26, 26, 26, 0.03);
     }
 }
 
