@@ -75,3 +75,32 @@ const revealObserver = new IntersectionObserver(revealCallback, revealOptions);
 revealElements.forEach(el => {
     revealObserver.observe(el);
 });
+
+// Theme Toggle Logic
+const themeBtn = document.getElementById('theme-toggle');
+const sunIcon = document.querySelector('.sun-icon');
+const moonIcon = document.querySelector('.moon-icon');
+
+function updateThemeIcons() {
+    if (document.documentElement.getAttribute('data-theme') === 'dark') {
+        sunIcon.style.display = 'none';
+        moonIcon.style.display = 'block';
+    } else {
+        sunIcon.style.display = 'block';
+        moonIcon.style.display = 'none';
+    }
+}
+
+// Initial icon state
+updateThemeIcons();
+
+if (themeBtn) {
+    themeBtn.addEventListener('click', () => {
+        let currentTheme = document.documentElement.getAttribute('data-theme');
+        let newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+        
+        document.documentElement.setAttribute('data-theme', newTheme);
+        localStorage.setItem('theme', newTheme);
+        updateThemeIcons();
+    });
+}
