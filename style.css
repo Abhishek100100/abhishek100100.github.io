@@ -7,6 +7,8 @@
     --bg-primary: #ffffff;      /* Pure White */
     --bg-secondary: #f8f9fa;    /* Very Light Gray */
     --bg-tertiary: #f1f3f5;     /* Light Gray */
+    --bg-header: rgba(255, 255, 255, 0.9);
+    --bg-header-scrolled: rgba(248, 249, 250, 0.95);
     
     --text-primary: #111827;    /* Slate Dark */
     --text-muted: #4b5563;      /* Slate Medium */
@@ -24,6 +26,8 @@
     --bg-primary: #0f1115;
     --bg-secondary: #16181d;
     --bg-tertiary: #1f2229;
+    --bg-header: rgba(15, 17, 21, 0.9);
+    --bg-header-scrolled: rgba(22, 24, 29, 0.95);
     
     --text-primary: #f8f9fa;
     --text-muted: #9ca3af;
@@ -157,13 +161,13 @@ a {
 
 /* Header & Navigation */
 #site-header {
-    background-color: rgba(250, 249, 245, 0.9);
+    background-color: var(--bg-header);
     backdrop-filter: blur(8px);
     border-bottom: 1px solid var(--border-color);
     position: sticky;
     top: 0;
     z-index: 100;
-    transition: var(--transition-smooth);
+    transition: var(--transition-smooth), background-color 0.4s ease;
 }
 
 .nav-container {
@@ -774,8 +778,19 @@ a {
 
 /* Dynamic styling on scroll */
 body.scrolled #site-header {
-    background-color: rgba(243, 241, 232, 0.95);
+    background-color: var(--bg-header-scrolled);
     border-bottom-color: var(--text-primary);
+}
+
+/* Dark mode image fixes */
+[data-theme="dark"] .hero-art-col img {
+    filter: invert(0.9) hue-rotate(180deg);
+}
+
+[data-theme="dark"] .exp-logo img {
+    background-color: #ffffff;
+    padding: 6px;
+    border-radius: 8px;
 }
 
 /* Scroll Reveal Animations */
