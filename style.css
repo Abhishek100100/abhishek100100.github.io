@@ -4,20 +4,20 @@
 
 :root {
     /* Color Palette */
-    --bg-primary: #faf9f5;      /* Ivory (paper background) */
-    --bg-secondary: #f3f1e8;    /* Ivory Medium (surfaces & cards) */
-    --bg-tertiary: #edeae0;     /* Darker Ivory (inputs & header scroll) */
+    --bg-primary: #ffffff;      /* Pure White */
+    --bg-secondary: #f8f9fa;    /* Very Light Gray */
+    --bg-tertiary: #f1f3f5;     /* Light Gray */
     
-    --text-primary: #191919;    /* Charcoal/Slate Dark */
-    --text-muted: #5c5a54;      /* Slate Medium */
-    --text-light: #8e8b82;      /* Slate Light */
+    --text-primary: #111827;    /* Slate Dark */
+    --text-muted: #4b5563;      /* Slate Medium */
+    --text-light: #9ca3af;      /* Slate Light */
     
     --accent-orange: #c95e3f;   /* Burnt Orange / Clay */
     --accent-green: #6e7f58;    /* Olive Green */
     --accent-blue: #58798f;     /* Slate Blue */
     
-    --border-color: #d5d2c4;    /* Papery Warm Grey Border */
-    --border-dark: #191919;     /* High Contrast Border */
+    --border-color: #e5e7eb;    /* Clean Gray Border */
+    --border-dark: #111827;     /* High Contrast Border */
     
     /* Typography */
     --font-serif: 'Newsreader', Georgia, serif;
@@ -156,11 +156,11 @@ a {
 }
 
 .logo a {
-    font-family: var(--font-sans);
-    font-size: 1.4rem;
+    font-family: 'Caveat', cursive;
+    font-size: 2.2rem;
     font-weight: 700;
-    letter-spacing: -0.03em;
-    text-transform: uppercase;
+    letter-spacing: 0;
+    text-transform: none;
 }
 
 .nav-links {
