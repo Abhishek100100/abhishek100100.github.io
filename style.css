@@ -411,6 +411,15 @@ a {
     padding-left: 2rem;
     border-left: 1px solid var(--border-color);
     position: relative;
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.4s ease;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 0 8px 8px 0;
+}
+
+.experience-item:hover {
+    background-color: var(--bg-primary);
+    transform: translateX(6px);
 }
 
 .experience-item::before {
@@ -531,8 +540,8 @@ a {
 .project-card-textual:hover {
     background-color: var(--bg-primary);
     transform: translateY(-4px);
-    box-shadow: 4px 4px 0px var(--border-dark);
-    border-color: var(--border-dark);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.06);
+    border-color: var(--text-light);
 }
 
 .card-header {
@@ -725,60 +734,11 @@ body.scrolled #site-header {
     border-bottom-color: var(--text-primary);
 }
 
-/* Custom Cursor Animation */
-@media (pointer: fine) {
-    body, a, button, .btn-retro {
-        cursor: none;
-    }
-
-    .custom-cursor {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 4px;
-        height: 4px;
-        border-radius: 0;
-        background-color: var(--accent-orange);
-        pointer-events: none;
-        z-index: 10000;
-        transform: translate(-50%, -50%);
-        transition: width 0.2s ease, height 0.2s ease, background-color 0.2s ease;
-    }
-
-    .custom-cursor-follower {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 40px;
-        height: 40px;
-        border-radius: 0;
-        border: 1px solid var(--accent-orange);
-        pointer-events: none;
-        z-index: 9999;
-        transform: translate(-50%, -50%);
-        transition: width 0.2s ease, height 0.2s ease, border-color 0.2s ease, background-color 0.2s ease;
-    }
-
-    .custom-cursor.hovering {
-        width: 6px;
-        height: 6px;
-        background-color: var(--text-primary);
-    }
-
-    .custom-cursor-follower.hovering {
-        width: 48px;
-        height: 48px;
-        border-color: var(--text-primary);
-        border-style: dashed;
-        background-color: rgba(26, 26, 26, 0.03);
-    }
-}
-
 /* Scroll Reveal Animations */
 .reveal {
     opacity: 0;
-    transform: translateY(40px);
-    transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+    transform: translateY(30px);
+    transition: opacity 1.2s cubic-bezier(0.16, 1, 0.3, 1), transform 1.2s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .reveal.active {

@@ -51,32 +51,6 @@ window.addEventListener('DOMContentLoaded', () => {
     );
 });
 
-// Custom Cursor Logic
-const cursor = document.querySelector('.custom-cursor');
-const cursorFollower = document.querySelector('.custom-cursor-follower');
-
-if (cursor && cursorFollower && window.matchMedia("(pointer: fine)").matches) {
-    document.addEventListener('mousemove', (e) => {
-        cursor.style.left = e.clientX + 'px';
-        cursor.style.top = e.clientY + 'px';
-        
-        // Add a slight delay to the follower using requestAnimationFrame or just simple CSS transition (which we have)
-        cursorFollower.style.left = e.clientX + 'px';
-        cursorFollower.style.top = e.clientY + 'px';
-    });
-
-    const hoverables = document.querySelectorAll('a, button, .btn-retro');
-    hoverables.forEach(el => {
-        el.addEventListener('mouseenter', () => {
-            cursor.classList.add('hovering');
-            cursorFollower.classList.add('hovering');
-        });
-        el.addEventListener('mouseleave', () => {
-            cursor.classList.remove('hovering');
-            cursorFollower.classList.remove('hovering');
-        });
-    });
-}
 
 // Scroll Reveal Observer
 const revealElements = document.querySelectorAll('.reveal');
