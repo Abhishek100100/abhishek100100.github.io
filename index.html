@@ -3,14 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abhishek Bagde — Software Engineer & Systems Builder</title>
-    <meta name="description" content="Portfolio of Abhishek Bagde, a System Software Engineer specializing in building robust distributed systems, high-performance AI workflows, and advanced computer vision platforms.">
-    <!-- Google Fonts: Newsreader (Serif), Plus Jakarta Sans (Sans-Serif), Space Mono (Monospace) -->
+    <title>Abhishek Bagde — Systems & Vision AI Engineer</title>
+    <meta name="description" content="Abhishek Bagde — System Software Engineer at NVIDIA. I build accelerated computer-vision pipelines and large-scale active-learning data engines, from Jetson edge devices to multi-GPU Kubernetes clusters.">
+    <meta name="author" content="Abhishek Bagde">
+    <meta name="theme-color" content="#F0EEE6" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#201F1D" media="(prefers-color-scheme: dark)">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Abhishek Bagde — Systems & Vision AI Engineer">
+    <meta property="og:description" content="System Software Engineer at NVIDIA. Accelerated vision pipelines and large-scale active-learning data engines, from edge to cloud.">
+    <meta property="og:url" content="https://abhishek100100.github.io/">
+    <meta property="og:image" content="https://abhishek100100.github.io/images/hero-art.jpg">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Abhishek Bagde — Systems & Vision AI Engineer">
+    <meta name="twitter:description" content="System Software Engineer at NVIDIA. Accelerated vision pipelines and large-scale active-learning data engines, from edge to cloud.">
+    <meta name="twitter:image" content="https://abhishek100100.github.io/images/hero-art.jpg">
+
+    <!-- Fonts: Newsreader (Serif display), Inter (Sans UI), Space Mono (Mono labels) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Newsreader:ital,opsz,wght@0,6..72,300..800;1,6..72,300..800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,300..800;1,6..72,300..800&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/jpeg" href="images/favicon.jpg">
-    <link rel="stylesheet" href="style.css?v=1.2">
+    <link rel="stylesheet" href="style.css?v=1.3">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Abhishek Bagde",
+      "jobTitle": "System Software Engineer",
+      "worksFor": { "@type": "Organization", "name": "NVIDIA" },
+      "alumniOf": [
+        { "@type": "CollegeOrUniversity", "name": "Indian Institute of Technology Roorkee" }
+      ],
+      "url": "https://abhishek100100.github.io/",
+      "image": "https://abhishek100100.github.io/images/profile.png",
+      "sameAs": [
+        "https://www.linkedin.com/in/bagde-abhishek",
+        "https://github.com/abhishek100100"
+      ],
+      "knowsAbout": ["Computer Vision", "Active Learning", "MLOps", "Kubernetes",
+        "Kubeflow", "NVIDIA TAO Toolkit", "TensorRT", "CUDA", "DeepStream", "Edge AI"]
+    }
+    </script>
+
     <script>
         // Init theme immediately to prevent flash
         (function(){
@@ -22,7 +61,8 @@
         })();
     </script>
 </head>
-<body>    <header id="site-header">
+<body>
+    <header id="site-header">
         <nav class="nav-container anthropic-nav">
             <div class="logo">
                 <a href="#" id="nav-logo-link">Abhishek Bagde</a>
@@ -31,7 +71,7 @@
                 <ul class="nav-links">
                     <li><a href="#about" id="nav-link-about">Biography</a></li>
                     <li><a href="#experience" id="nav-link-experience">Experience</a></li>
-                    <li><a href="#projects" id="nav-link-projects">Projects</a></li>
+                    <li><a href="#projects" id="nav-link-projects">Work</a></li>
                 </ul>
                 <button id="theme-toggle" class="theme-btn" aria-label="Toggle Dark Mode">
                     <svg class="sun-icon" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
@@ -43,19 +83,20 @@
     </header>
 
     <main>
-        
+
         <!-- Hero Section -->
         <section id="hero" class="section-hero reveal">
             <div class="container hero-container-anthropic">
                 <div class="hero-text-col">
                     <h1 class="hero-headline">
-                        Architecting<br>AI at Scale
+                        Scaling Vision AI,<br>from Edge to Cloud
                     </h1>
                     <p class="hero-subheadline">
-                        System Software Engineer at NVIDIA, pioneering the next generation of vision analytics and edge-to-cloud artificial intelligence.
+                        System Software Engineer at NVIDIA. I build accelerated vision pipelines and large-scale active-learning data engines — from Jetson devices to multi-GPU Kubernetes clusters.
                     </p>
                     <div class="hero-actions">
-                        <a href="#about" class="btn-dark">Read biography</a>
+                        <a href="#projects" class="btn-dark">Explore my work</a>
+                        <a href="#contact" class="btn-ghost">Get in touch</a>
                     </div>
                 </div>
                 <div class="hero-art-col">
@@ -72,7 +113,7 @@
                     <div class="profile-wrapper">
                         <img src="images/profile.png" alt="Abhishek Bagde" class="profile-pic">
                     </div>
-                    
+
                     <!-- Metadata Paper Grid -->
                     <div class="metadata-grid metadata-bio">
                         <div class="metadata-item">
@@ -81,7 +122,7 @@
                         </div>
                         <div class="metadata-item">
                             <span class="meta-label">FOCUS</span>
-                            <span class="meta-value">Vision Analytics, DeepStream SDK & Edge AI</span>
+                            <span class="meta-value">Vision AI · Active Learning · MLOps</span>
                         </div>
                         <div class="metadata-item">
                             <span class="meta-label">LOCATION</span>
@@ -89,59 +130,72 @@
                         </div>
                     </div>
 
-                    <h2 class="section-title">Architecting the future of <em>Vision Analytics</em>.</h2>
+                    <h2 class="section-title">Engineering intelligent <em>vision systems</em>.</h2>
                     <p class="about-text">
-                        I am a System Software Engineer on the <strong>NVIDIA DeepStream Team</strong>, managing Metropolis AI workflows and pioneering active learning techniques. As a former Technical Lead at HCLSoftware, I engineered mission-critical, real-time computer vision platforms and autonomous UAV software from the ground up.
+                        I am a System Software Engineer at <strong>NVIDIA</strong>, working on Metropolis AI workflows and the active-learning data engines that keep vision models improving over time. Previously, as a Technical Lead at HCLSoftware, I built mission-critical, real-time computer-vision platforms and autonomous UAV software from the ground up.
                     </p>
                     <p class="about-text">
-                        Armed with an M.Tech in Computer Science from IIT Roorkee, I thrive at the bleeding edge of machine learning, high-performance computing, and robust software architecture. I specialize in developing hyper-optimized, hardware-accelerated pipelines using technologies like C++, CUDA, GStreamer, and TensorRT on NVIDIA and NXP SoCs. My code doesn't just run; it pushes the absolute boundaries of AI performance, scaling seamlessly from edge devices to massive cluster-level deployments.
+                        With an M.Tech in Computer Science from IIT Roorkee, I work across the full stack of production AI — from hardware-accelerated pipelines in C++, CUDA, and TensorRT on edge SoCs, to distributed training and evaluation on GPU clusters. I care about systems that are fast, reliable, and measurable at scale.
                     </p>
-                    
+
                     <!-- Currently Status Board -->
                     <div class="currently-board reveal">
                         <span class="meta-label">CURRENTLY FOCUSING ON</span>
                         <ul class="currently-list">
-                            <li>Core engineering on the NVIDIA DeepStream team</li>
-                            <li>Managing and optimizing Metropolis AI workflows</li>
-                            <li>Pioneering active learning for vision platforms</li>
+                            <li>Active-learning data engines for large-scale detection datasets</li>
+                            <li>Auto-labeling with open-vocabulary foundation models &amp; embedding search</li>
+                            <li>Scaling training &amp; evaluation pipelines on Kubeflow + Kubernetes</li>
                         </ul>
                     </div>
                 </div>
                 <div class="about-right">
                     <div class="section-tag" id="skills-tag">[02] STACK & TOOLS</div>
-                    <h3 class="subsection-title">Technical Arsenal</h3>
-                    
+                    <h3 class="subsection-title">Technical Toolkit</h3>
+
                     <div class="skills-category">
                         <span class="category-name">LANGUAGES / 04</span>
                         <div class="skills-list">
                             <span class="skill-tag">C/C++ (Core)</span>
                             <span class="skill-tag">Python (Core)</span>
-                            <span class="skill-tag">SQL (Strong)</span>
                             <span class="skill-tag">Bash (Strong)</span>
+                            <span class="skill-tag">SQL</span>
                         </div>
                     </div>
 
                     <div class="skills-category">
-                        <span class="category-name">AI & MACHINE LEARNING / 06</span>
+                        <span class="category-name">AI / ML & FOUNDATION MODELS / 07</span>
                         <div class="skills-list">
                             <span class="skill-tag">PyTorch (Core)</span>
                             <span class="skill-tag">TensorRT (Strong)</span>
                             <span class="skill-tag">CUDA (Strong)</span>
                             <span class="skill-tag">ONNX</span>
                             <span class="skill-tag">OpenCV</span>
-                            <span class="skill-tag">Generative AI</span>
+                            <span class="skill-tag">Vision-Language Models</span>
+                            <span class="skill-tag">Grounding DINO / RT-DETR</span>
                         </div>
                     </div>
 
                     <div class="skills-category">
-                        <span class="category-name">SYSTEMS & EDGE AI / 06</span>
+                        <span class="category-name">MLOPS & AI INFRASTRUCTURE / 06</span>
                         <div class="skills-list">
-                            <span class="skill-tag">Linux Internals (Core)</span>
-                            <span class="skill-tag">GStreamer (Strong)</span>
+                            <span class="skill-tag">Active Learning</span>
+                            <span class="skill-tag">Data Curation</span>
+                            <span class="skill-tag">Kubeflow Pipelines</span>
+                            <span class="skill-tag">Kubernetes</span>
+                            <span class="skill-tag">NVIDIA TAO Toolkit</span>
+                            <span class="skill-tag">FastAPI</span>
+                        </div>
+                    </div>
+
+                    <div class="skills-category">
+                        <span class="category-name">EDGE AI & SYSTEMS / 06</span>
+                        <div class="skills-list">
                             <span class="skill-tag">DeepStream</span>
+                            <span class="skill-tag">GStreamer (Strong)</span>
+                            <span class="skill-tag">Jetson</span>
+                            <span class="skill-tag">Linux Internals (Core)</span>
                             <span class="skill-tag">ROS2</span>
                             <span class="skill-tag">Yocto</span>
-                            <span class="skill-tag">Gazebo</span>
                         </div>
                     </div>
 
@@ -149,10 +203,10 @@
                         <span class="category-name">DEVOPS & CLOUD / 05</span>
                         <div class="skills-list">
                             <span class="skill-tag">Docker (Core)</span>
-                            <span class="skill-tag">Git/CI/CD (Strong)</span>
+                            <span class="skill-tag">Git / CI-CD (Strong)</span>
+                            <span class="skill-tag">Kubernetes</span>
                             <span class="skill-tag">Azure Cloud</span>
-                            <span class="skill-tag">FastAPI</span>
-                            <span class="skill-tag">React</span>
+                            <span class="skill-tag">Argo Workflows</span>
                         </div>
                     </div>
                 </div>
@@ -177,9 +231,10 @@
                             </div>
                             <div class="exp-company">NVIDIA — Pune, India</div>
                             <ul class="exp-details">
-                                <li>Design and develop accelerated streaming AI pipelines using CV and Vision-Language (VLM) models for Metropolis AI workflows.</li>
-                                <li>Evaluate and test AI pipelines using Omniverse-based simulations, digital twins, and synthetic datasets.</li>
-                                <li>Profile and optimize complex system-level pipelines to ensure scalability, reliability, and peak efficiency across Kubernetes clusters.</li>
+                                <li>Build large-scale active-learning data engines that automatically mine, auto-label, and curate detection datasets to continuously improve model accuracy.</li>
+                                <li>Apply open-vocabulary foundation models (e.g., Grounding DINO, RT-DETR) and image-embedding search (SigLIP / CLIP) to pseudo-label and target the most informative samples.</li>
+                                <li>Orchestrate end-to-end training and evaluation on multi-GPU Kubernetes clusters using Kubeflow Pipelines and the NVIDIA TAO Toolkit, with automated A/B KPI gating.</li>
+                                <li>Develop accelerated streaming vision and vision-language (VLM) pipelines for Metropolis AI workflows, validated with Omniverse simulation and synthetic data.</li>
                             </ul>
                         </div>
                     </div>
@@ -191,7 +246,7 @@
                         <div class="exp-content">
                             <div class="exp-header">
                                 <h3 class="exp-title">Technical Lead</h3>
-                                <span class="exp-date">Jul 2023 - Present</span>
+                                <span class="exp-date">Jul 2023 - Dec 2025</span>
                             </div>
                             <div class="exp-company">HCLSoftware — Chennai, India</div>
                             <ul class="exp-details">
@@ -215,24 +270,7 @@
                             <div class="exp-company">Department of C.S.E., IIT Roorkee — Roorkee, India</div>
                             <ul class="exp-details">
                                 <li>Served as TA for Principles of Programming Languages and Database Management Systems, supporting 120+ students.</li>
-                                <li>Conducted weekly lab sessions and tutorial sessions for programming concepts and database design.</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="experience-item with-logo">
-                        <div class="exp-logo">
-                            <img src="images/techintern-logo.png" alt="TheTechIntern Logo" onerror="this.style.display='none'">
-                        </div>
-                        <div class="exp-content">
-                            <div class="exp-header">
-                                <h3 class="exp-title">Machine Learning Intern</h3>
-                                <span class="exp-date">Dec 2019 - Jan 2020</span>
-                            </div>
-                            <div class="exp-company">TheTechIntern — Nagpur, India</div>
-                            <ul class="exp-details">
-                                <li>Worked on various project modules, demonstrating skills in Python, Data Science, and Machine Learning.</li>
-                                <li>Developed customised applications for critical predictions and automated reasoning.</li>
+                                <li>Conducted weekly lab sessions and tutorials for programming concepts and database design.</li>
                             </ul>
                         </div>
                     </div>
@@ -280,43 +318,28 @@
         <section id="projects" class="section-projects reveal">
             <div class="container">
                 <div class="section-tag" id="projects-tag">[05] SELECTED WORK</div>
-                <h2 class="section-title text-center">Engineering <em>masterpieces</em>.</h2>
-                
+                <h2 class="section-title text-center">Selected <em>work</em>.</h2>
+
                 <div class="project-text-grid">
-                    <!-- Project 1 -->
-                    <a href="https://github.com/Abhishek100100/Multi-Stage-DNS-Resolver-Using-Socket-Programming" target="_blank" rel="noopener noreferrer" class="project-card-textual">
+                    <!-- Flagship (non-linked to protect internals) -->
+                    <div class="project-card-textual is-static">
                         <div class="card-header">
                             <span class="project-num">01</span>
-                            <span class="project-category">Systems / C++</span>
+                            <span class="project-category">MLOps · Active Learning</span>
                         </div>
-                        <h3 class="project-title">Multi-Stage DNS Resolver</h3>
+                        <h3 class="project-title">Active-Learning Data Engine</h3>
                         <p class="project-description">
-                            High-performance 2-tier DNS resolution system with intelligent caching, supporting 100+ concurrent clients and achieving 98ms average response times.
+                            Automated active-learning loop that mines, auto-labels, and curates large-scale detection datasets using open-vocabulary foundation models and embedding search — continuously lifting model KPIs. Orchestrated on distributed multi-GPU Kubernetes clusters.
                         </p>
                         <div class="card-footer">
-                            <span class="view-link">View details ↗</span>
+                            <span class="view-link is-muted">Internal Architecture · overview on request</span>
                         </div>
-                    </a>
+                    </div>
 
                     <!-- Project 2 -->
-                    <a href="https://github.com/Abhishek100100/two-level-cache-simulator" target="_blank" rel="noopener noreferrer" class="project-card-textual">
-                        <div class="card-header">
-                            <span class="project-num">02</span>
-                            <span class="project-category">Systems / C++</span>
-                        </div>
-                        <h3 class="project-title">Two-Level Cache Simulator</h3>
-                        <p class="project-description">
-                            Physically-indexed, physically-tagged L1/L2 caches with configurable parameters, multiple replacement policies (LRU, FIFO, Random), and USIMM trace support.
-                        </p>
-                        <div class="card-footer">
-                            <span class="view-link">View details ↗</span>
-                        </div>
-                    </a>
-
-                    <!-- Project 3 -->
                     <a href="https://github.com/Abhishek100100/Real-Time-Social-Distancing-Monitoring-System" target="_blank" rel="noopener noreferrer" class="project-card-textual">
                         <div class="card-header">
-                            <span class="project-num">03</span>
+                            <span class="project-num">02</span>
                             <span class="project-category">Computer Vision / Python</span>
                         </div>
                         <h3 class="project-title">Real-Time Social Distancing Monitor</h3>
@@ -328,10 +351,40 @@
                         </div>
                     </a>
 
+                    <!-- Project 3 -->
+                    <a href="https://github.com/Abhishek100100/Multi-Stage-DNS-Resolver-Using-Socket-Programming" target="_blank" rel="noopener noreferrer" class="project-card-textual">
+                        <div class="card-header">
+                            <span class="project-num">03</span>
+                            <span class="project-category">Systems / C++</span>
+                        </div>
+                        <h3 class="project-title">Multi-Stage DNS Resolver</h3>
+                        <p class="project-description">
+                            High-performance 2-tier DNS resolution system with intelligent caching, supporting 100+ concurrent clients and achieving 98ms average response times.
+                        </p>
+                        <div class="card-footer">
+                            <span class="view-link">View details ↗</span>
+                        </div>
+                    </a>
+
                     <!-- Project 4 -->
-                    <a href="https://github.com/Abhishek100100/threads-backend-api" target="_blank" rel="noopener noreferrer" class="project-card-textual">
+                    <a href="https://github.com/Abhishek100100/two-level-cache-simulator" target="_blank" rel="noopener noreferrer" class="project-card-textual">
                         <div class="card-header">
                             <span class="project-num">04</span>
+                            <span class="project-category">Systems / C++</span>
+                        </div>
+                        <h3 class="project-title">Two-Level Cache Simulator</h3>
+                        <p class="project-description">
+                            Physically-indexed, physically-tagged L1/L2 caches with configurable parameters, multiple replacement policies (LRU, FIFO, Random), and USIMM trace support.
+                        </p>
+                        <div class="card-footer">
+                            <span class="view-link">View details ↗</span>
+                        </div>
+                    </a>
+
+                    <!-- Project 5 -->
+                    <a href="https://github.com/Abhishek100100/threads-backend-api" target="_blank" rel="noopener noreferrer" class="project-card-textual">
+                        <div class="card-header">
+                            <span class="project-num">05</span>
                             <span class="project-category">Backend / Java</span>
                         </div>
                         <h3 class="project-title">Threads Backend API</h3>
@@ -343,10 +396,10 @@
                         </div>
                     </a>
 
-                    <!-- Project 5 -->
+                    <!-- Project 6 -->
                     <a href="https://github.com/Abhishek100100/Digital-Healthcare-Management-Platform" target="_blank" rel="noopener noreferrer" class="project-card-textual">
                         <div class="card-header">
-                            <span class="project-num">05</span>
+                            <span class="project-num">06</span>
                             <span class="project-category">Full-Stack / Python</span>
                         </div>
                         <h3 class="project-title">Digital Healthcare Management Platform</h3>
@@ -368,7 +421,7 @@
                     <div class="section-tag" id="contact-tag">[06] CONNECTION</div>
                     <h2 class="contact-catchphrase">Let's <em>connect</em>.</h2>
                     <p class="contact-text">
-                        I am currently a System Software Engineer at NVIDIA. If you'd like to collaborate on open-source projects, talk computer vision, or review code, reach out.
+                        I'm always open to conversations about computer vision, active learning, MLOps, and edge systems — whether it's collaboration, open source, or trading notes on production AI.
                     </p>
                     <div class="contact-action">
                         <a href="mailto:bagdeabhishek.rahul@gmail.com" class="btn btn-retro" id="contact-btn">
@@ -388,10 +441,10 @@
     <footer id="site-footer">
         <div class="container footer-container">
             <p class="footer-copy">&copy; 2026 Abhishek Bagde. All rights reserved.</p>
-            <p class="footer-colophon">Set in Newsreader & Space Mono. Inspired by high-end editorial print.</p>
+            <p class="footer-colophon">Set in Newsreader & Inter. Warm, editorial, calm.</p>
         </div>
     </footer>
 
-    <script src="script.js?v=1.1"></script>
+    <script src="script.js?v=1.2"></script>
 </body>
 </html>

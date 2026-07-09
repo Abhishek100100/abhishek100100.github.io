@@ -3,12 +3,9 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
         const targetId = this.getAttribute('href');
-        
+
         if (targetId === '#') {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
+            window.scrollTo({ top: 0, behavior: 'smooth' });
             return;
         }
 
@@ -17,11 +14,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             const headerOffset = 80;
             const elementPosition = targetElement.getBoundingClientRect().top;
             const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-
-            window.scrollTo({
-                top: offsetPosition,
-                behavior: 'smooth'
-            });
+            window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
         }
     });
 });
@@ -35,22 +28,19 @@ window.addEventListener('scroll', () => {
     }
 });
 
-// Retro CLI/Terminal easter egg in the DevTools console
+// Console note
 window.addEventListener('DOMContentLoaded', () => {
     console.log(
         `%c
-   ▲ ABHISHEK BAGDE — PORTFOLIO
-   ============================
-   Status: Active & Looking
-   Focus:  Systems & Web Engineering
-   OS:     Mac / Linux
-   
-   Type 'help()' for nothing, or email me!
-        `,
-        'font-family: monospace; font-weight: bold; color: #c95e3f; background: #faf9f5; padding: 10px; border: 1px solid #d5d2c4;'
+  ABHISHEK BAGDE — PORTFOLIO
+  ==========================
+  Role:  System Software Engineer @ NVIDIA
+  Focus: Vision AI · Active Learning · MLOps
+  Say hi: bagdeabhishek.rahul@gmail.com
+  `,
+        'font-family: monospace; font-weight: bold; color: #C15F3C; background: #F0EEE6; padding: 10px; border: 1px solid #DBD7CB;'
     );
 });
-
 
 // Scroll Reveal Observer
 const revealElements = document.querySelectorAll('.reveal');
@@ -59,46 +49,36 @@ const revealCallback = (entries, observer) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
             entry.target.classList.add('active');
-            observer.unobserve(entry.target); // Only animate once
+            observer.unobserve(entry.target);
         }
     });
 };
 
-const revealOptions = {
+const revealObserver = new IntersectionObserver(revealCallback, {
     root: null,
     rootMargin: '0px',
     threshold: 0.15
-};
-
-const revealObserver = new IntersectionObserver(revealCallback, revealOptions);
-
-revealElements.forEach(el => {
-    revealObserver.observe(el);
 });
 
-// Theme Toggle Logic
+revealElements.forEach(el => revealObserver.observe(el));
+
+// Theme Toggle
 const themeBtn = document.getElementById('theme-toggle');
 const sunIcon = document.querySelector('.sun-icon');
 const moonIcon = document.querySelector('.moon-icon');
 
 function updateThemeIcons() {
-    if (document.documentElement.getAttribute('data-theme') === 'dark') {
-        sunIcon.style.display = 'none';
-        moonIcon.style.display = 'block';
-    } else {
-        sunIcon.style.display = 'block';
-        moonIcon.style.display = 'none';
-    }
+    const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+    if (sunIcon) sunIcon.style.display = isDark ? 'none' : 'block';
+    if (moonIcon) moonIcon.style.display = isDark ? 'block' : 'none';
 }
 
-// Initial icon state
 updateThemeIcons();
 
 if (themeBtn) {
     themeBtn.addEventListener('click', () => {
-        let currentTheme = document.documentElement.getAttribute('data-theme');
-        let newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-        
+        const currentTheme = document.documentElement.getAttribute('data-theme');
+        const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
         document.documentElement.setAttribute('data-theme', newTheme);
         localStorage.setItem('theme', newTheme);
         updateThemeIcons();
